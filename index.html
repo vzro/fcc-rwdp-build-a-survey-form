@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Star Wars Survey</title>
+    </head>
+
+    <body>
+
+        <div id="header">
+                <h1 id="title">Star Wars Survey</h1>
+                <p id="description">Tell us a how passionate you are about Star Wars!</p>
+        </div>
+
+        <div id="main">
+
+            <form action="" id="survey-form">
+                
+                <div id="fan">
+                        <label for="name" id="name-label">Name:
+                            <input type="text" name="name" id="name" placeholder="Type your name" required><br>
+                        </label>
+                        <label for="email" id="email-label">E-mail:
+                            <input type="email" name="email" id="email" placeholder="Type your e-mail" required><br>
+                        </label>
+                        <label for="number" id="number-label">Age:
+                            <input type="number" name="age" id="number" min="16" max="99" placeholder="Type your age" required><br>
+                        </label>
+                </div>
+                
+                <br>
+
+                <div id="fav-char">
+                    <label for="dropdown">Favorite Character:
+                        <select name="characters" id="dropdown" required>
+                            <option value="">-- Choose a Character --</option>
+                            <optgroup label="Empire">
+                                <option value="darth-vader">Darth Vader</option>
+                                <option value="stormtrooper">Stormtrooper</option>
+                                <option value="darth-sidious">Darth Sidious</option>
+                            </optgroup>
+                            <optgroup label="Republic">
+                                <option value="yoda">Yoda</option>
+                                <option value="luke-skywalker">Luke Skywalker</option>
+                                <option value="jar-jar-binks">Jar Jar Binks</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                    </label>
+                </div>
+
+                <br>
+
+                <div id="path">
+                    <span>I am a</span>
+                    <label for="jedi">Jedi
+                        <input type="radio" name="jedi-sith" id="jedi" checked>
+                    </label>
+                    <label for="sith">Sith
+                        <input type="radio" name="jedi-sith" id="sith" >
+                    </label>
+                </div>
+
+                <br>
+
+                <div id="movies">
+                    <p>Favorite movies:</p>
+                    
+                    <label for="i">
+                        <input type="checkbox" name="episodes" id="i" value="episode-i">
+                        Episode I - The Phantom Menace
+                    </label>
+                    
+                    <br>
+
+                    <label for="ii">
+                        <input type="checkbox" name="episodes" id="ii" value="episode-ii">
+                        Episode II - Attack of the Clones
+                    </label>
+                    
+                    <br>
+                    
+                    <label for="iii">
+                        <input type="checkbox" name="episodes" id="iii" value="episode-iii">
+                        Episode III - Revenge of the Sith
+                    </label>
+
+                    <br>
+                    
+                    <label for="iv">
+                        <input type="checkbox" name="episodes" id="iv" value="episode-iv">
+                        Episode IV - A New Hope
+                    </label>
+
+                    <br>
+
+                    <label for="v">
+                        <input type="checkbox" name="episodes" id="v" value="episode-v">
+                        Episode V - The Empire Strikes Back
+                    </label>
+                    
+                    <br>
+
+                    <label for="vi">                       
+                        <input type="checkbox" name="episodes" id="vi" value="episode-vi">
+                        Episode VI - Return of the Jedi
+                    </label>
+                    
+                    <br>
+                    
+                    <label for="vii">
+                        <input type="checkbox" name="episodes" id="vii" value="episode-vii">
+                        Episode VII - The Force Awakens
+                    </label>
+                    
+                    <br>
+                    
+                    <label for="viii">
+                        <input type="checkbox" name="episodes" id="viii" value="episode-viii">
+                        Episode VIII - The Last Jedi
+                    </label>
+                    
+                    <br>
+
+                    <label for="ix">
+                        <input type="checkbox" name="episodes" id="ix" value="episode-ix">
+                        Episode IX - The Rise of Skywalker
+                    </label>
+                    
+                    <br>
+
+                    <label for="rogue">
+                        <input type="checkbox" name="episodes" id="rogue" value="episode-rogue">                        
+                        Rogue One: A Star Wars Story
+                    </label>
+                    
+                    <br>
+                    
+                    <label for="solo">
+                        <input type="checkbox" name="episodes" id="solo" value="episode-solo">
+                        Solo: A Star Wars Story
+                    </label>
+                    <br>
+                </div>
+
+                <br>
+
+                <div id="user-feedback">
+                    <p>What's the impact of the Star Wars universe on your life?</p>
+                    <label for="feedback">
+                            <textarea id="feedback" rows="5" cols="40" placeholder="Max of 280 characters" required></textarea>
+                    </label>
+                </div>
+
+                <br>
+                <input type="submit" value="Submit" id="submit">
+                
+            </form>
+
+        </div>
+
+    </body>
+</html>

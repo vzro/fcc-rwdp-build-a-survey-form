@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+    color: #AAA;
+    text-align: center;
+}
+
+#main {
+    background-color: #111;
+    margin: 2%;
+}
+
+#header {
+    background-color: #333;
+    margin: 5% 2%;
+}
+
+#survey-form {
+    background-color: #22f2;
+    padding: 2%;
+}
+
+#fan {
+    background-color: #333;
+}
+
+#fav-char {
+    background-color: #333;
+}
+
+#path {
+    background-color: #333;
+}
+
+#movies {
+    background-color: #333;
+}
+
+#user-feedback {
+    background-color: #333;
+}
