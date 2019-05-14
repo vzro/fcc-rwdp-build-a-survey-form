@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+@font-face {
+    font-family: "STARWARS";
+    src: url("http://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("embedded-opentype"), /* IE6-IE8 */
+         url("http://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff"), /* chrome firefox */
+         url("http://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS"); /* iOS 4.1- */
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,39 +16,154 @@ body {
     background-color: #000;
     color: #AAA;
     text-align: center;
+    background: url('https://wallpapersafari.com/image/star-wars-space-wallpaper.jpg') repeat;
 }
 
 #main {
-    background-color: #111;
     margin: 2%;
 }
 
 #header {
-    background-color: #333;
     margin: 5% 2%;
 }
 
+#header h1 {
+    font-family: "STARWARS", 'Press Start 2P', cursive;
+    color: yellow;
+    font-size: 350%;
+}
+
+#header p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: dodgerblue;
+    font-size: 150%;
+    max-width: 100%;
+}
+
+@media (max-width: 400px) {
+    #header h1 {
+        font-size: 200%;
+    }
+    #header p {
+        font-size: 100%;
+    }
+}
+
 #survey-form {
-    background-color: #22f2;
-    padding: 2%;
+    background-color: #111a;
+    padding: 1%;
+    border-radius: 0.7%;
 }
 
-#fan {
-    background-color: #333;
+#survey-form label {
+    display: inline-block;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #222;
 }
 
-#fav-char {
-    background-color: #333;
+#survey-form #fan input {
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    height: 30px;
+    width: 100%;
+}
+
+#fav-char select {
+    border: none;
+    outline: none;
+}
+
+#fav-char select {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: none;
+    background-color: rgb(1, 1, 1);
+    color: #AAA;
+    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#fav-char optgroup {
+    background-color: #000;
+    border: none;
+}
+
+#fav-char option {
+    background-color: #000;
+    color: #AAA;
+    border: none;
+}
+
+#fav-char optgroup[label="Empire"] {
+    color: red;
+    border: none;
+}
+#fav-char optgroup[label="Republic"] {
+    color: dodgerblue;
+    border: none;
 }
 
 #path {
-    background-color: #333;
+    color: #AAA;
+}
+
+#path label[for="path-title"] {
+    background-color: #222;
+    display: block;
+}
+
+#path label {
+    background-color: transparent;
+    display: inline-block;
+    background-color: #000;
 }
 
 #movies {
-    background-color: #333;
+    background: #000;
 }
 
-#user-feedback {
-    background-color: #333;
+#movies div {
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#movies label[for="movies-title"] {
+    background-color: #222;
+    text-align: center;
+    padding: 0%;
+}
+
+#movies label {
+    background-color: black;
+    padding: 1%;
+}
+
+#user-feedback label[for="feedback-title"] {
+    background-color: #222;
+}
+
+#user-feedback label {
+    background-color: #000;
+}
+
+#user-feedback textarea {
+    background-color: #000;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #AAA;
+}
+
+#submit {
+    background-color: #000;
+    color: #AAA;
+    padding: 3%;
+    border: none;
+    border-left: solid yellow;
+    border-right: solid dodgerblue;
+    outline: none;
 }
